@@ -1,6 +1,5 @@
 const root = document.documentElement;
 const themeToggle = document.querySelector('.theme-toggle');
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
 function currentTheme() {
   return root.dataset.theme === 'dark' ? 'dark' : 'light';
@@ -24,7 +23,7 @@ function setTheme(theme, remember = true) {
 
   if (remember) {
     try {
-      localStorage.setItem('theme', theme);
+    localStorage.setItem('theme-preference', theme);
     } catch (error) {}
   }
 }
@@ -35,14 +34,6 @@ if (themeToggle) {
     setTheme(currentTheme() === 'dark' ? 'light' : 'dark');
   });
 }
-
-prefersDark.addEventListener('change', (event) => {
-  try {
-    if (localStorage.getItem('theme')) return;
-  } catch (error) {}
-
-  setTheme(event.matches ? 'dark' : 'light', false);
-});
 
 document.querySelectorAll('[data-current-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();

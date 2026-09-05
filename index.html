@@ -11,9 +11,8 @@
     <script>
         document.documentElement.classList.add('js');
         try {
-            const savedTheme = localStorage.getItem('theme');
-            const preferredTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-            document.documentElement.dataset.theme = savedTheme || preferredTheme;
+            const savedTheme = localStorage.getItem('theme-preference');
+            document.documentElement.dataset.theme = savedTheme || 'light';
         } catch (error) {}
     </script>
     <link rel="stylesheet" href="./style.css">
