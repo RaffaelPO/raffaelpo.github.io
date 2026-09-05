@@ -571,11 +571,18 @@ h3 {
 }
 
 .footer-name {
+  display: inline-block;
   margin-bottom: 0.35rem;
   color: #fff;
   font-family: var(--display);
   font-size: 1.4rem;
   font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.footer-name:hover {
+  color: var(--accent);
 }
 
 .footer-role {
