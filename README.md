@@ -8,9 +8,9 @@ This website brings together that work and the approach I now bring to technical
 
 ## What’s here
 
-- **Home** — an introduction to my work and the experience behind it.
-- **Projects** — selected technical articles, data journalism, investigations, and cultural reviews.
-- **About** — my professional background, education, and contact details.
+- **Home**: an introduction to my work and the experience behind it.
+- **Projects**: selected technical articles, data journalism, investigations, and cultural reviews.
+- **About**: my professional background, education, and contact details.
 
 ## Built with
 
