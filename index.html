@@ -8,7 +8,7 @@
     <title>Rafael Oliveira — Technical Writer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Rubik:wght@400;500;600&family=Special+Elite&display=swap" rel="stylesheet">
     <script>
         document.documentElement.classList.add('js');
         try {
@@ -17,6 +17,7 @@
         } catch (error) {}
     </script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./typewriter.css">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -47,17 +48,35 @@
     </header>
 
     <main id="main-content">
-        <section class="hero" aria-labelledby="hero-title">
-            <h1 id="hero-title">Clear writing for complex ideas.</h1>
-            <p class="hero-summary">Hi 👋</p>
-            <p class="hero-summary">
-                I’m Rafael Oliveira, a technical writer with a background in journalism. Whether I’m writing
-                or hosting a conversation in front of an audience, the goal is the same: to make
-                complex ideas easier to understand.
-            </p>
-            <div class="hero-actions">
-                <a class="button button-primary" href="./projects.html">View selected work</a>
-                <a class="button button-secondary" href="./about.html">More about me <span aria-hidden="true">→</span></a>
+        <section class="hero hero--typewriter" aria-labelledby="hero-title">
+            <h1 id="hero-title" class="hero-accessible-title">Clear writing for complex ideas.</h1>
+            <div class="hero-introduction">
+                <p class="hero-greeting">Hi 👋</p>
+                <p class="hero-summary">
+                    I’m Rafael Oliveira, a technical writer with a background in journalism. Whether I’m writing
+                    or hosting a conversation in front of an audience, the goal is the same: to make
+                    complex ideas easier to understand.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="./projects.html">View selected work</a>
+                    <a class="button button-secondary" href="./about.html">More about me <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <div class="typewriter-art">
+                <button class="typewriter" type="button" aria-label="Replay the typewriter: Clear writing for complex ideas.">
+                    <span class="typewriter-carriage" aria-hidden="true">
+                        <span class="typewriter-paper"><span class="typewriter-text">Clear writing for
+complex ideas.</span></span>
+                        <span class="typewriter-roller"></span>
+                        <span class="typewriter-knob typewriter-knob-left"></span>
+                        <span class="typewriter-knob typewriter-knob-right"></span>
+                        <span class="typewriter-lever"></span>
+                    </span>
+                    <span class="typewriter-back" aria-hidden="true"><span class="typewriter-ribbon"></span><span class="typewriter-strike"></span></span>
+                    <span class="typewriter-housing" aria-hidden="true"><span class="typewriter-keys"></span></span>
+                    <span class="typewriter-feet" aria-hidden="true"></span>
+                    <span class="typewriter-shadow" aria-hidden="true"></span>
+                </button>
             </div>
         </section>
 
@@ -127,5 +146,6 @@
         </div>
     </footer>
     <script src="./script.js"></script>
+    <script src="./typewriter.js"></script>
 </body>
 </html>
