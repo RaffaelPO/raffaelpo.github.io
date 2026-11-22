@@ -12,6 +12,10 @@ This website brings together that work and the approach I now bring to technical
 - **Projects**: selected technical articles, data journalism, investigations, and cultural reviews.
 - **About**: my professional background, education, and contact details.
 
+## Technical writing sample
+
+- **[MuberFleet Operation & API Guide](samples/muberfleet-operation-guide.md)** — a fictional recruitment challenge demonstrating GUI procedures, API reference documentation, request/response examples, validation checklists and troubleshooting. This is a writing sample, not documentation for an operational system.
+
 ## Built with
 
 HTML, CSS, and JavaScript. Hosted on GitHub Pages.
